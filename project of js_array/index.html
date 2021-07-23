@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>project of array </title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 id="maintitle">My amazing family</h1>
+     
+          <img id="image1" src="IMG_0703.jpeg">
+          <h1 id="name"></h1>
+   <button id="button1" onclick="nextpic()"> next pic</button>
+  </body>
+
+
+  </html>
+
+
+    <script>
+      var family=["My family","Yanvi agrawal","Maulik agrawal","Mamta agrawal", "Deepak agrawal"];
+        console.log(family);
+        
+
+        var image=["https://cdn3.vectorstock.com/i/1000x1000/95/27/happy-family-cartoon-vector-21559527.jpg","https://us.123rf.com/450wm/yupiramos/yupiramos1905/yupiramos190505227/122760736-little-girl-avatar-character-vector-illustration-design.jpg?ver=6","https://i.pinimg.com/736x/77/d4/15/77d41520a3f07995b184797a3734bf44.jpg","https://www.nicepng.com/png/detail/89-892939_mom-cartoon-clipart-mom-animated.png","https://www.nicepng.com/png/detail/215-2159743_dad-clipart-images-dad-clip-art-dad-clipart.png"];
+var i=0
+function nextpic()
+{
+  i++;//i+1
+  var number_of_family_member=4
+  if (i > number_of_family_member) 
+  {
+    i=0;
+  }
+   
+  
+
+
+var update_image = image[i];
+var update_family = family[i];
+
+document.getElementById("name").innerHTML=update_family;
+document.getElementById("image1").src=update_image;
+
+}
+
+</script>
